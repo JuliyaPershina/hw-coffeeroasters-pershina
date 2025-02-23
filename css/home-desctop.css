@@ -1,0 +1,202 @@
+:root {
+  --dark_cyan: #0e8784;
+  --dark_grey_blue: #333d4b;
+  --pale_orange: #fdd6ba;
+  --light_cream: #fefcf7;
+  --grey: #83888f;
+}
+
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/fraunces-v32-latin-900.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/fraunces-v32-latin-900.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/barlow-v12-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('../fonts/barlow-v12-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--light_cream);
+  color: var(--dark_grey_blue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.container-out {
+  max-width: 1300px;
+  padding-inline: 20px;
+  background: var(--dark_grey_blue);
+  margin-inline: auto;
+}
+.container-in {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+.button {
+  width: 217px;
+  height: 56px;
+  background-color: var(--dark_cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 10px;
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  border-radius: 6px;
+  border: none;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  &:hover,
+  &:active {
+    background: #66d2cf;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+header {
+  max-width: 1300px;
+  padding-inline: 20px;
+  margin-inline: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-block-end: 136px;
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    min-height: 113px;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 32px;
+      li {
+        color: var(--grey);
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.923px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: var(--dark_grey_blue);
+        }
+      }
+    }
+  }
+  .header-home {
+    color: var(--light_cream);
+    height: 100%;
+    flex-grow: 1;
+    margin-inline: 0;
+    border-radius: 10px;
+    background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    display: flex;
+    align-items: center;
+    .header-home-text {
+      width: 493px;
+      height: 367px;
+      margin-inline-start: 85px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      div {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        h1 {
+          font-family: 'Fraunces', serif;
+          font-size: 72px;
+          font-weight: 900;
+          line-height: 72px;
+        }
+      }
+    }
+  }
+}
+
+.collection {
+  margin-block-end: 200px;
+  background-image: url(../assets/home/desktop/our-collection.png);
+  background-repeat: no-repeat;
+  min-height: 525px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2 {
+    color: transparent;
+  }
+  .collection-items {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    img {
+      width: 295px;
+      height: 193px;
+      object-fit: cover;
+    }
+    .collection-item {
+      display: flex;
+      flex-direction: column;
+      height: 398px;
+      justify-content: space-between;
+      div {
+        min-height: 134px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          font-family: 'Fraunces', serif;
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 32px;
+        }
+        p {
+          text-align: center;
+          text-wrap: initial;
+        }
+      }
+    }
+  }
+}
+
+.choose {
+  min-height: 728px;
+  background-image: linear-gradient(
+    var(--dark_cyan) 75%,
+    var(--light_cream) 25%
+  );
+
+}
