@@ -359,8 +359,21 @@ header {
   .icons {
     display: flex;
     gap: 24px;
-    .icon {
-      fill: aqua;
+    a {
+      .icon {
+        position: relative;
+        width: 24px;
+        height: 24px;
+      }
+      .icon::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: var(--pale_orange);
+        top: 0;
+        left: 0;
+      }
     }
   }
 }
