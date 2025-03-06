@@ -1,0 +1,5 @@
+@media (max-width: 820px) {
+    .collection-items {
+        flex-direction: column;
+    }
+}
