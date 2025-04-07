@@ -46,51 +46,26 @@ body {
   font-weight: 400;
   line-height: 26px;
 }
-
+main,
 .container-out {
   max-width: 1320px;
   padding-inline: 20px;
   margin-inline: auto;
 }
-.container-in {
-  max-width: 1130px;
-  padding-inline: 10px;
-  margin-inline: auto;
-}
-.button {
-  width: 217px;
-  height: 56px;
-  min-height: 56px;
-  background-color: var(--dark_cyan);
-  color: var(--light_cream);
+
+section {
+  padding-inline: 85px;
+  margin-block-end: 168px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 10px;
-  font-family: 'Fraunces', serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 25px;
-  border-radius: 6px;
-  border: none;
-  transition: background 250ms ease-in-out, transform 150ms ease;
-  &:hover,
-  &:active {
-    background: #66d2cf;
-  }
-  &:active {
-    transform: scale(0.99);
-  }
 }
 
 header {
   max-width: 1320px;
   padding-inline: 20px;
   margin-inline: auto;
-  min-height: 713px;
   display: flex;
   flex-direction: column;
-  margin-block-end: 136px;
+  margin-block-end: 168px;
 
   .header-top {
     display: flex;
@@ -121,226 +96,144 @@ header {
   .header-home {
     color: var(--light_cream);
     height: 100%;
-    flex-grow: 1;
+    min-height: 450px;
     margin-inline: 0;
     border-radius: 10px;
-    background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+    background-image: url(../assets/about/desktop/image-hero-whitecup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     display: flex;
     align-items: center;
     .header-home-text {
-      width: 493px;
-      height: 367px;
       margin-inline-start: 85px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       div {
         display: flex;
-        gap: 32px;
+        gap: 24px;
         flex-direction: column;
         h1 {
           font-family: 'Fraunces', serif;
-          font-size: 72px;
+          font-size: 40px;
           font-weight: 900;
-          line-height: 72px;
+          line-height: 48px;
         }
         p {
-          max-width: 440px;
+          max-width: 445px;
         }
       }
     }
   }
 }
 
-.collection {
-  margin-block-end: 200px;
-  background-image: url(../assets/home/desktop/our-collection.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 525px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  h2 {
-    color: transparent;
-  }
-  .collection-items {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    img {
-      padding-block-start: 14px;
-      width: 295px;
-      height: 193px;
-      object-fit: fill;
-    }
-    .collection-item {
-      display: flex;
-      flex-direction: column;
-      height: 398px;
-      justify-content: space-between;
-      div {
-        min-height: 134px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+.commitment {
+  min-height: 520px;
+  gap: 125px;
+  align-items: center;
+  .commitment-img {
+    picture {
+      width: 445px;
+      border-radius: 8px;
+      background-color: var(--dark_cyan);
+      img {
+        display: block;
         align-items: center;
-        h3 {
-          font-family: 'Fraunces', serif;
-          font-size: 24px;
-          font-weight: 900;
-          line-height: 32px;
-        }
-        p {
-          text-align: center;
-          text-wrap: initial;
-        }
+        border-radius: 8px;
       }
     }
   }
-}
-
-.choose {
-  min-height: 728px;
-  background: var(--light_cream);
-  margin-block-end: 200px;
-  color: var(--light_cream);
-  position: relative;
-  .choose-head {
-    background: var(--dark_grey_blue);
-    height: 577px;
-    border-radius: 8px;
-    text-align: center;
+  .commitment-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
     h2 {
-      padding-block-start: 100px;
-      padding-block-end: 32px;
-      font-family: 'Fraunces', serif;
+      font-family: 'Fraunces', sans-serif;
       font-size: 40px;
       font-weight: 900;
       line-height: 48px;
     }
     p {
-      display: block;
-      max-width: 529px;
-      margin-inline: auto;
+      max-width: 540px;
+      height: fit-content;
     }
   }
-  .choose-items {
-    display: flex;
-    min-height: 151px;
-    width: 100%;
-    gap: 30px;
-    padding-inline: 30px;
+}
+
+.quality {
+  min-height: 562px;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-inline: 0;
+  .quality-img {
     position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    justify-content: space-evenly;
-    .choose-items-inner {
-      background-color: var(--dark_cyan);
-      width: 350px;
-      min-height: 382px;
-      padding: 72px 48px 48px;
+    align-self: flex-end;
+    top: 0;
+    right: 85px;
+    background-color: var(--dark_cyan);
+    border-radius: 8px;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .quality-dark {
+    min-height: 474px;
+    width: 100%;
+    padding-inline: 85px;
+    padding-block-start: 100px;
+    border-radius: 10px;
+    background-color: #2c343e;
+    color: var(--light_cream);
+
+    .quality-text {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 8px;
-      img {
-        width: 72px;
-        height: 72px;
-        object-fit: contain;
-      }
-      h3 {
+      width: 540px;
+      max-width: 49%;
+      gap: 32px;
+      h2 {
         font-family: 'Fraunces', serif;
-        font-size: 24px;
+        font-size: 40px;
         font-weight: 900;
-        line-height: 32px;
-        text-align: center;
-      }
-      p {
-        text-align: center;
+        line-height: 48px;
       }
     }
   }
 }
 
-.works {
-  min-height: 682px;
-  display: flex;
+.headquarters {
   flex-direction: column;
-  gap: 64px;
-  padding-block-end: 200px;
-  padding-inline: 20px;
+  gap: 72px;
   h2 {
-    color: var(--grey);
+    color: #83888f;
     font-family: 'Fraunces', serif;
     font-size: 24px;
     font-weight: 900;
     line-height: 32px;
-    margin-block-end: 20px;
   }
-  .works-items {
+  .headquarters-items {
     display: flex;
-    justify-content: start;
-    .works-item {
-      width: 380px;
-      height: 453px;
-      padding-inline-end: 95px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow: hidden;
-      div {
-        width: 31px;
-        height: 31px;
-        flex-shrink: 0;
-        border: 1px solid var(--dark_cyan);
-        border-radius: 50%;
-        position: relative;
-        margin-block-end: 30px;
-        &::after {
-          content: '';
-          position: absolute;
-          width: 450px;
-          height: 1px;
-          background-color: var(--pale_orange);
-          top: 50%;
-          left: 100%;
-        }
-      }
-      &:last-child {
-        div::after {
-          display: none;
-        }
-      }
-      .item-number {
-        color: var(--pale_orange);
-        font-family: 'Fraunces', serif;
-        font-size: 72px;
-        font-weight: 900;
-        line-height: 72px;
-      }
-      h3 {
-        width: 255px;
-        padding-block-end: 4px;
-        color: var(--dark_grey_blue);
-        font-family: 'Fraunces', serif;
-        font-size: 32px;
-        font-weight: 900;
-        line-height: 36px;
-      }
-      .item-text {
-        text-wrap: initial;
-      }
-      &:last-child {
-        width: 285px;
-        padding: 0;
-      }
+    justify-content: space-between;
+    margin-inline-end: 65px;
+  }
+  .headquarters-item {
+    width: 275px;
+    margin-inline-end: 10px;
+    img {
+      margin-block-end: 45px;
+      height: 53px;
+    }
+    h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 36px;
+      margin-block-end: 24px;
     }
   }
 }

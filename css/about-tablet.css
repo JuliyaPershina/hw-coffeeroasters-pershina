@@ -1,0 +1,53 @@
+@media (max-width: 1100px) {
+  body {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  main,
+  .container-out {
+    max-width: 729px;
+    margin-inline: auto;
+  }
+
+  section {
+    padding-inline: 0;
+    margin-block-end: 144px;
+  }
+
+  header {
+    max-width: 729px;
+    margin-block-end: 144px;
+
+    .header-home {
+      background-image: url(../assets/about/tablet/image-hero-whitecup.jpg);
+      min-height: 400px;
+      .header-home-text {
+        margin-inline-start: 58px;
+        div {
+          h1 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+          p {
+            max-width: 398px;
+          }
+        }
+      }
+    }
+  }
+
+  .commitment {
+    min-height: 470px;
+    gap: 69px;
+    .commitment-img {
+      picture {
+        width: auto;
+      }
+    }
+    .commitment-text {
+      h2 {
+        font-size: 32px;
+      }
+    }
+  }
+}
