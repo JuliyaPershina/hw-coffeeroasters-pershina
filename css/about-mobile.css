@@ -1,7 +1,104 @@
 @media (max-width: 670px) {
-  body {
-    font-size: 15px;
-    line-height: 25px;
+  .container-in {
+    max-width: 709px;
+    padding-inline: 20px;
+    margin-inline: auto;
+  }
+  .container-out {
+    margin-inline: 24px;
+    padding-inline: 0;
+  }
+  header {
+    padding-inline: 24px;
+    margin-block-end: 120px;
+    .header-top {
+      min-height: 90px;
+      position: relative;
+      div {
+        width: 163px;
+        height: 18px;
+      }
+      nav {
+        input[type='checkbox'] + label {
+          .burger {
+            display: block;
+            width: 16px;
+            height: 15px;
+            background-image: url(../assets/shared/mobile/icon-hamburger.svg);
+          }
+          ul {
+            display: none;
+          }
+        }
+        input[type='checkbox']:checked + label {
+          .burger {
+            width: 14px;
+            height: 13px;
+            background-image: url(../assets/home/mobile/Cross.png);
+          }
+          ul {
+            position: absolute;
+            width: 100vw;
+            height: 577px;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(
+              0deg,
+              rgba(254, 252, 247, 0.5) 0%,
+              #fefcf7 55.94%
+            );
+            top: 90px;
+            left: -20px;
+            padding-block-start: 40px;
+            li {
+              font-family: 'Fraunces', serif;
+              color: #333d4b;
+              text-align: center;
+              font-size: 24px;
+              font-weight: 900;
+              line-height: 32px;
+              text-transform: none;
+            }
+          }
+        }
+      }
+    }
+    .header-home {
+      justify-content: center;
+      background-image: url(../assets/about/mobile/image-hero-whitecup.jpg);
+      & .header-home-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 39px;
+        margin-inline: 0;
+        padding-inline: 24px;
+        & div {
+          gap: 24px;
+          h1 {
+            padding-block-start: 24px;
+            font-size: 28px;
+            line-height: 28px;
+          }
+          p {
+            text-wrap: initial;
+          }
+        }
+      }
+    }
   }
 
+  .footer {
+    padding: 54px;
+    justify-content: flex-start;
+    gap: 48px;
+    margin-block-end: 72px;
+    ul {
+      padding-block-end: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
 }

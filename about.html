@@ -61,10 +61,6 @@
     <main>
       <section class="commitment">
         <div class="commitment-img">
-          <!-- <img
-            src="./assets/about/desktop/image-commitment.jpg"
-            alt="Barista with a cup of coffee"
-          /> -->
 
           <picture>
             <source
@@ -99,10 +95,20 @@
 
       <section class="quality">
         <div class="quality-img">
-          <img
+
+          <picture>
+            <source
+              media="(min-width: 1100px)"
+              srcset="./assets/about/desktop/image-quality.jpg"
+            />
+            <source media="(min-width: 670px)" srcset="./assets/about/tablet/image-quality.jpg" />
+            <source media="(min-width: 200px)" srcset="././assets/about/mobile/image-quality.jpg" />
+            <img
             src="./assets/about/desktop/image-quality.jpg"
             alt="Cup of coffee with heart-shaped foam"
           />
+          </picture>
+
         </div>
         <div class="quality-dark">
           <div class="quality-text">
