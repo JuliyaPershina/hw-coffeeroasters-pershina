@@ -1,4 +1,10 @@
 @media (max-width: 670px) {
+  main {
+    padding-inline: 24px;
+  }
+  section {
+    margin-block-end: 120px;
+  }
   .container-in {
     max-width: 709px;
     padding-inline: 20px;
@@ -39,7 +45,7 @@
           ul {
             position: absolute;
             width: 100vw;
-            height: 577px;
+            height: 408px;
             display: flex;
             flex-direction: column;
             background: linear-gradient(
@@ -47,7 +53,7 @@
               rgba(254, 252, 247, 0.5) 0%,
               #fefcf7 55.94%
             );
-            top: 90px;
+            top: 88px;
             left: -20px;
             padding-block-start: 40px;
             li {
@@ -85,6 +91,57 @@
             text-wrap: initial;
           }
         }
+      }
+    }
+  }
+
+  .commitment {
+    gap: 48px;
+    flex-direction: column;
+    .commitment-text {
+      width: auto;
+      align-items: center;
+      gap: 30px;
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .quality {
+    min-height: 587px;
+    .quality-dark {
+      padding-inline: 24px;
+      min-height: 509px;
+      height: 83%;
+      .quality-text {
+        margin-block-end: 61px;
+        text-align: center;
+        h2 {
+          font-size: 28px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .headquarters {
+    text-align: center;
+    .headquarters-items {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 80px;
+    }
+    .headquarters-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-inline-end: 0;
+      h3 {
+        font-size: 28px;
       }
     }
   }
